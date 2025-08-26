@@ -72,14 +72,9 @@ This efficient MSFF design is suitable for:
 - Energy-constrained applications
 - VLSI circuits requiring optimized sequential elements
 
-## 📚 References
-
-- Rabaey, "Digital Integrated Circuits: A Design Perspective"
-- Weste & Harris, "CMOS VLSI Design: A Circuits and Systems Perspective"
-- NGSpice Documentation
-
 ---
 
 <p align="center">
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
+
 </p>
