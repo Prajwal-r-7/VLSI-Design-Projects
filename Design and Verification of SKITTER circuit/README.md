@@ -63,3 +63,10 @@ Input Signal → [Buffer Chain] → [Sampling FFs] → [Encoder] → [Histogram]
 ✅ Successfully designed and verified SKITTER circuit functionality  
 ✅ Characterized buffer delay-voltage relationship using NGSpice  
 ✅ Validated design through comprehensive simulation testing  
+
+---
+
+<p align="center">
+  <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
+
+</p>
