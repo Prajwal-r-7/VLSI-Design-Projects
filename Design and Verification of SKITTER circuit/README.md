@@ -54,7 +54,7 @@ Input Signal → [Buffer Chain] → [Sampling FFs] → [Encoder] → [Histogram]
 ## 📊 Applications
 
 - **Power Supply Noise Analysis** - Quantify voltage fluctuation impact on timing
-- **PLL Jitter Measurement** - Characterize clock generation stability  
+- **Jitter Measurement** - Characterize clock generation stability  
 - **Process Variation Study** - Analyze manufacturing tolerance effects
 - **System Reliability Assessment** - Ensure timing margin adequacy
 
@@ -62,28 +62,4 @@ Input Signal → [Buffer Chain] → [Sampling FFs] → [Encoder] → [Histogram]
 
 ✅ Successfully designed and verified SKITTER circuit functionality  
 ✅ Characterized buffer delay-voltage relationship using NGSpice  
-✅ Implemented statistical analysis for noise quantification  
 ✅ Validated design through comprehensive simulation testing  
-
-## 📁 Repository Structure
-
-```
-📦 SKITTER-Circuit/
-├── 📁 ngspice-simulations/     # Analog delay characterization
-├── 📁 verilog-modules/         # Digital circuit implementation  
-├── 📁 testbenches/            # Verification and validation
-├── 📁 results/                # Simulation outputs and analysis
-└── 📄 README.md              # This file
-```
-
-## 🔍 Key Insights
-
-- Buffer-based approach provides better noise sensitivity than single inverters
-- Histogram analysis enables statistical characterization of timing variations
-- Combined analog-digital methodology ensures accurate delay modeling
-
----
-
-<p align="center">
-  <i>Developed by Prajwal | CoachED VLSI Training Program</i>
-</p>
