@@ -44,6 +44,7 @@ Created comprehensive **Energy vs Delay** graphs with marked points showing:
 
 - `circuit.png` - Schematic diagram of the efficient MSFF design
 - `efficient_msff.pdf` - Comprehensive design report with simulation results and analysis
+- `msff.sp` - Design of MSFF in NGspice (code)
 - `README.md` - Project documentation (this file)
 
 ## 🔍 Key Results
@@ -78,3 +79,4 @@ This efficient MSFF design is suitable for:
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
 
 </p>
+
