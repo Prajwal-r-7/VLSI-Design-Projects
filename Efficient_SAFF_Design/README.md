@@ -82,6 +82,7 @@ Comprehensive comparison between **SAFF** and **Efficient MSFF**:
 ## 📁 Repository Contents
 
 - `efficient_saff_design.pdf` - Complete design report with simulation results
+- `saff.sp` - Design of SAFF in NGspice (code)
 - `README.md` - Project documentation (this file)
 
 ## 📈 Simulation Results
@@ -105,4 +106,5 @@ SAFF design is ideal for:
 
 <p align="center">
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
+
 </p>
