@@ -80,8 +80,8 @@ assign empty = (w_gray2bin == r_ptr);
 ## 📁 Repository Contents
 
 - `block_diagram.png` - Asynchronous FIFO architecture diagram
-- `async_fifo.v` - Main asynchronous FIFO module
-- `tb_async_fifo.v` - Testbench with independent clocks
+- `asynchronous.v` - Main asynchronous FIFO module
+- `tb_asynchronous.v` - Testbench with independent clocks
 - `waveform.png` - Simulation waveforms showing cross-domain operation
 - `README.md` - Project documentation (this file)
 
@@ -103,4 +103,5 @@ assign empty = (w_gray2bin == r_ptr);
 
 <p align="center">
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
+
 </p>
