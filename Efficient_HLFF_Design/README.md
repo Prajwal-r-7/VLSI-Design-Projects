@@ -82,6 +82,7 @@ The Hybrid Latch Flip-Flop operates through three key functional mechanisms:
 ## 📁 Repository Contents
 
 - `efficient_hlff_design.pdf` - Comprehensive design report with simulation results and analysis
+- `hlff.sp` - Design of HLFF in NGspice (code)
 - `README.md` - Project documentation (this file)
 
 ## 📈 Simulation Results
@@ -110,4 +111,5 @@ HLFF design is optimal for:
 
 <p align="center">
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
+
 </p>
