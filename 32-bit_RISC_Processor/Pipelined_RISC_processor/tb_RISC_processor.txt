@@ -1,0 +1,22 @@
+`timescale 1ns / 1ps  
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module tb_RISC_processor;
+    reg clk, rst;
+    
+    RISC_top_module dut(
+                .clk(clk), 
+                .rst(rst)
+                );
+                
+    always #1 clk = ~clk;
+    
+    initial begin
+      clk = 0; rst = 1;
+      #3 rst = 0;
+      
+      #200 $finish;
+    end 
+    
+endmodule
