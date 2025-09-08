@@ -97,6 +97,15 @@ The processor supports basic RISC instruction set including arithmetic, logical,
 
 ---
 
+## 📊 Instructions exicuted 
+- Instruction 1: 00600283 (`lw x5, 6(x0)`)
+- Instruction 2: 00A08103 (`lw x2, 10(x1)`)
+- Instruction 3: 001203B3 (`add x7 x4 x1`)
+- Instruction 4: 404084B3 (`sub x9 x1 x4`)
+- Instruction 5: 00100123 (`sw x1, 2(x0)`)
+
+---
+
 ## 🔬 Simulation Results
 
 <table>
@@ -131,5 +140,6 @@ The processor supports basic RISC instruction set including arithmetic, logical,
 🔗 LinkedIn: [linkedin.com/in/prajwal~r](https://www.linkedin.com/in/prajwal~r)
 
 ---
+
 
 ⭐ **If you find this project helpful, please give it a star!**
