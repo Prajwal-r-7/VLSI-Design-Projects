@@ -67,6 +67,54 @@ The processor supports basic RISC instruction set including arithmetic, logical,
 
 ---
 
+## 🔄 Why Pipelining?
+
+### Single-Cycle Processor Limitations
+
+In a **single-cycle processor**, each instruction must complete all five stages before the next instruction can begin:
+
+```
+Instruction 1: [IF][ID][EX][MEM][WB]
+Instruction 2:                      [IF][ID][EX][MEM][WB]
+Instruction 3:                                           [IF][ID][EX][MEM][WB]
+```
+
+**Disadvantages of Single-Cycle Design:**
+- ⏰ **Lower Throughput**: Only one instruction completes per clock cycle
+- 🐌 **Slower Clock Speed**: Clock period determined by slowest stage
+- ⚡ **Resource Underutilization**: Most functional units idle during each cycle
+- 💰 **Poor Performance**: CPI (Cycles Per Instruction) = 1, but with very long cycles
+
+### Pipelined Processor Advantages
+
+In a **pipelined processor**, multiple instructions execute simultaneously in different stages:
+
+```
+Clock: 1    2    3    4    5    6    7    8
+Inst1: [IF][ID][EX][MEM][WB]
+Inst2:     [IF][ID][EX][MEM][WB]
+Inst3:         [IF][ID][EX][MEM][WB]
+Inst4:             [IF][ID][EX][MEM][WB]
+Inst5:                 [IF][ID][EX][MEM][WB]
+```
+
+**Advantages of Pipelined Design:**
+- 🚀 **Higher Throughput**: One instruction completes every clock cycle (after initial fill)
+- ⚡ **Faster Clock Speed**: Clock period determined by fastest stage
+- 🔧 **Better Resource Utilization**: All functional units working simultaneously
+- 📈 **Improved Performance**: Up to 5x speedup compared to single-cycle
+
+### Performance Comparison
+
+| Metric | Single-Cycle | Pipelined | Improvement |
+|--------|---------------|-----------|-------------|
+| **Instructions/sec** | 1 / (5 × stage_delay) | 1 / stage_delay | **5x faster** |
+| **Resource Usage** | 20% (1/5 units active) | 100% (all units active) | **5x better** |
+| **Latency per instruction** | 5 × stage_delay | 5 × stage_delay | Same |
+| **Throughput** | Low | High | **Significantly better** |
+
+---
+
 ## 📊 Pipeline Stages
 
 ### 1. **Fetch Cycle** (`Fetch_cycle.v`)
@@ -143,3 +191,4 @@ The processor supports basic RISC instruction set including arithmetic, logical,
 
 
 ⭐ **If you find this project helpful, please give it a star!**
+
