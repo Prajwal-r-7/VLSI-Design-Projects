@@ -35,7 +35,7 @@ The processor supports basic RISC instruction set including arithmetic, logical,
 │   ├── RISC_top_module.v       # Top-level processor module
 │   └── tb_RISC_processor.v     # Testbench for simulation
 ├── 📂 Pipelined_RISC_processor_with_Hazard_Unit/    # Hazard unit (forwarding)
-│   └── Inclueds files of Pipelined RISC Processor with Hazard Unit           
+│   └── Includes files of Pipelined RISC Processor with Hazard Unit           
 ├── 📂 Result/
 │   ├── data_memory_values.png  # Data memory contents
 │   ├── register_file_values.png # Register file contents
@@ -193,5 +193,6 @@ Inst5:                 [IF][ID][EX][MEM][WB]
 
 
 ⭐ **If you find this project helpful, please give it a star!**
+
 
 
