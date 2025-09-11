@@ -58,7 +58,7 @@ assign full = ({~w_ptr[PTR_WIDTH], w_ptr[PTR_WIDTH-1:0]} == r_ptr);
 ## 📁 Repository Structure
 
 ```
-📦 Asynchronous_FIFO_Design/
+📦 Synchronous_FIFO_Design/
 │   ├── block_diagram.png    #  FIFO block diagram and architecture
 │   ├── synchronous.v        # Main FIFO module implementation
 │   ├── tb_synchronous.v     # Testbench for verification
@@ -97,3 +97,4 @@ The testbench demonstrates:
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
 
 </p>
+
