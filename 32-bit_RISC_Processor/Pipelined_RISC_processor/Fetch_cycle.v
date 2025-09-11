@@ -63,13 +63,13 @@ module Instruction_memory(
     reg [31:0] mem [1023:0];
     
     initial begin
-      mem[0] = 32'h00000000;
-      mem[1] = 32'h00600283;
-      mem[2] = 32'h00A08103;
+        mem[0] = 32'h00000000;   
+        mem[1] = 32'h00600283;  // lw x5, 6(x0)
+        mem[2] = 32'h00A08103;  // lw x2, 10(x1)
       
-      mem[3] = 32'h001203B3;
-      mem[4] = 32'h404084B3;
-      mem[5] = 32'h00100123;
+        mem[3] = 32'h001203B3;  // add x7 x4 x1
+        mem[4] = 32'h404084B3;  // sub x9 x1 x4
+        mem[5] = 32'h00100123;  // sw x1, 2(x0)
     end  
      
     assign IM_out =  mem[IM_in[31:2]];
@@ -143,3 +143,4 @@ module Fetch_cycle(
     assign PCPlus4D =  PC_plus4F_reg;
     
 endmodule
+
