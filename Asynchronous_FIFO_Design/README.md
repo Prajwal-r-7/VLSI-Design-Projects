@@ -77,13 +77,22 @@ assign empty = (w_gray2bin == r_ptr);
 - **Reliable Flag Generation**: Proper full/empty detection across domains
 - **Parameterizable Design**: Configurable data width and FIFO depth
 
-## 📁 Repository Contents
+---
 
-- `block_diagram.png` - Asynchronous FIFO architecture diagram
-- `asynchronous.v` - Main asynchronous FIFO module
-- `tb_asynchronous.v` - Testbench with independent clocks
-- `waveform.png` - Simulation waveforms showing cross-domain operation
-- `README.md` - Project documentation (this file)
+## 📁 Repository Structure
+
+```
+📦 Asynchronous_FIFO_Design/
+│   ├── block_diagram.png - Asynchronous FIFO architecture diagram
+│   ├── block_diagram.png` - Asynchronous FIFO architecture diagram 
+│   ├── asynchronous.v` - Main asynchronous FIFO module
+│   ├── tb_asynchronous.v` - Testbench with independent clocks
+│   ├── waveform.png` - Simulation waveforms showing cross-domain operation
+│   └── README.md` - Project documentation (this file)
+
+```
+
+---
 
 ## 🔍 Design Parameters
 
@@ -105,3 +114,4 @@ assign empty = (w_gray2bin == r_ptr);
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
 
 </p>
+
