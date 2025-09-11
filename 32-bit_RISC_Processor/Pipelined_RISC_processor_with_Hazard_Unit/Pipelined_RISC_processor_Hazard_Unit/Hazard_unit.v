@@ -1,22 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11.09.2025 12:14:13
-// Design Name: 
-// Module Name: Hazard_unit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+//                         Hazard Unit : Forwarding                             //
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -34,3 +18,4 @@ module Hazard_unit(
                         ((RegWriteW == 1) && (RdW != 0) && (RdW == Rs2E)) ? 2'b01 : 2'b00;
                         
 endmodule
+
