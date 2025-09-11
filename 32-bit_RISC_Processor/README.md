@@ -1,6 +1,6 @@
-# 🚀 32-bit Pipelined RISC Processor
+# 🛡️ 32-bit Pipelined RISC Processor
 
-A complete implementation of a 32-bit pipelined RISC processor designed using Verilog HDL and simulated on Xilinx Vivado. This project demonstrates the fundamentals of computer architecture with a 5-stage pipeline implementation.
+A complete implementation of a 32-bit pipelined RISC processor designed using Verilog HDL and simulated on Xilinx Vivado. This project demonstrates the fundamentals of computer architecture with a 5-stage pipeline implementation with hazard detection unit.
 
 <p align="center">
   <img src="block_diagram.png" alt="RISC Processor Block Diagram" width="600">
@@ -34,6 +34,8 @@ The processor supports basic RISC instruction set including arithmetic, logical,
 │   ├── Write_back_cycle.v      # Write Back stage
 │   ├── RISC_top_module.v       # Top-level processor module
 │   └── tb_RISC_processor.v     # Testbench for simulation
+├── 📂 Pipelined_RISC_processor_with_Hazard_Unit/    # Hazard unit (forwarding)
+│   └── Inclueds files of Pipelined RISC Processor with Hazard Unit           
 ├── 📂 Result/
 │   ├── data_memory_values.png  # Data memory contents
 │   ├── register_file_values.png # Register file contents
@@ -191,4 +193,5 @@ Inst5:                 [IF][ID][EX][MEM][WB]
 
 
 ⭐ **If you find this project helpful, please give it a star!**
+
 
