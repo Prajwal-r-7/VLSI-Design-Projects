@@ -1,10 +1,9 @@
 # 🔄 Asynchronous FIFO Design
 
----
 ## 📋 Project Overview
 
 This project implements an **Asynchronous FIFO (First-In-First-Out)** buffer using Verilog HDL. The FIFO operates across different clock domains with independent read and write clocks, featuring Gray code pointers and proper clock domain crossing techniques for reliable data transfer.
----
+
 
 ## 🛠️ Tools Used
 - **Xilinx Vivado** - Synthesis and implementation
@@ -35,6 +34,8 @@ r_data <= fifo_mem[r_ptr[PTR_WIDTH-1:0]];
 - Data read using read clock domain
 - Read pointer increments in Gray code
 
+---
+
 ## 🔗 Clock Domain Crossing Techniques
 
 ### **Gray Code Implementation**
@@ -51,6 +52,8 @@ r_data <= fifo_mem[r_ptr[PTR_WIDTH-1:0]];
 - **Write to Read Domain**: Write pointer synchronized to read clock
 - **Read to Write Domain**: Read pointer synchronized to write clock
 - **Metastability Protection**: Two flip-flop stages prevent timing violations
+  
+---
 
 ## 🏁 Status Flag Generation
 
@@ -100,7 +103,7 @@ assign empty = (w_gray2bin == r_ptr);
 
 - `DATA_WIDTH` - Width of data bus
 - `DEPTH` - FIFO memory depth (must be power of 2)
-- `PTR_WIDTH` - Pointer width (log2(DEPTH) + 1)
+- `PTR_WIDTH` - Pointer width (log2(DEPTH) + 1)  // 1 additional bit for full logic calculation
 
 ## 🚀 How to Use
 
