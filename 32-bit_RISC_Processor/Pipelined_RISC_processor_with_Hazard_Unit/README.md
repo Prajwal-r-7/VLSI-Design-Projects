@@ -79,11 +79,11 @@ ForwardBE = ((RegWriteM == 1) && (RdM != 0) && (RdM == Rs2E)) ? 2'b10 :
 The processor is tested with data-dependent instructions:
 
 
-- Instruction1: 00600283 (`lw x5, 6(x0)`)     # Load word into x5
-- Instruction2: 00A08103 (`lw x2, 10(x1)`)   # Load word into x2
-- Instruction3: 004283B3 (`add x7, x5, x4`)   # RAW hazard: depends on x5
-- Instruction4: 402504B3 (`sub x9, x10, x2`)  # RAW hazard: depends on x2  
-- Instruction5: 00938633 (`add x12, x7, x9`)  # RAW hazard: depends on x7 and x9
+- Instruction1: 00600283 (`lw x5, 6(x0)`)       # Load word into x5
+- Instruction2: 00A08103 (`lw x2, 10(x1)`)      # Load word into x2
+- Instruction3: 004283B3 (`add x7, x5, x4`)     # RAW hazard: depends on x5
+- Instruction4: 402504B3 (`sub x9, x10, x2`)    # RAW hazard: depends on x2  
+- Instruction5: 00938633 (`add x12, x7, x9`)    # RAW hazard: depends on x7 and x9
 
 ---
 
@@ -123,4 +123,5 @@ The processor is tested with data-dependent instructions:
 
 
 ⭐ **This implementation demonstrates advanced pipelining concepts and real-world processor design challenges!**
+
 
