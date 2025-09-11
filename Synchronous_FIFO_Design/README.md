@@ -8,6 +8,8 @@ This project implements a **Synchronous FIFO (First-In-First-Out)** buffer using
 - **Xilinx Vivado** - Synthesis and implementation
 - **Verilog HDL** - Hardware description language
 
+---
+
 ## 🏗️ FIFO Architecture
 
 ### Core Components:
@@ -41,6 +43,8 @@ assign full = ({~w_ptr[PTR_WIDTH], w_ptr[PTR_WIDTH-1:0]} == r_ptr);
 - **Empty**: Generated when read and write pointers are equal
 - **Full**: Generated using Gray code logic to prevent overflow
 
+---
+
 ## ✨ Key Features
 
 - **Synchronous Operation**: Single clock domain for read/write operations
@@ -49,13 +53,21 @@ assign full = ({~w_ptr[PTR_WIDTH], w_ptr[PTR_WIDTH-1:0]} == r_ptr);
 - **Gray Code Pointers**: Prevents metastability issues
 - **Flow Control**: Built-in overflow and underflow protection
 
-## 📁 Repository Contents
+---
 
-- `block_diagram.png` - FIFO block diagram and architecture
-- `synchronous.v` - Main FIFO module implementation
-- `tb_synchronous.v` - Testbench for verification
-- `waveform.png` - Simulation waveforms showing FIFO operation
-- `README.md` - Project documentation (this file)
+## 📁 Repository Structure
+
+```
+📦 Asynchronous_FIFO_Design/
+│   ├── block_diagram.png    #  FIFO block diagram and architecture
+│   ├── synchronous.v        # Main FIFO module implementation
+│   ├── tb_synchronous.v     # Testbench for verification
+│   ├── waveform.png         # Simulation waveforms showing FIFO operation
+│   └── README.md            # Project documentation (this file)
+
+```
+
+---
 
 ## 🚀 How to Use
 
@@ -83,4 +95,5 @@ The testbench demonstrates:
 
 <p align="center">
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
+
 </p>
