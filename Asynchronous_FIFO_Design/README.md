@@ -1,8 +1,10 @@
 # 🔄 Asynchronous FIFO Design
 
+---
 ## 📋 Project Overview
 
 This project implements an **Asynchronous FIFO (First-In-First-Out)** buffer using Verilog HDL. The FIFO operates across different clock domains with independent read and write clocks, featuring Gray code pointers and proper clock domain crossing techniques for reliable data transfer.
+---
 
 ## 🛠️ Tools Used
 - **Xilinx Vivado** - Synthesis and implementation
@@ -83,12 +85,12 @@ assign empty = (w_gray2bin == r_ptr);
 
 ```
 📦 Asynchronous_FIFO_Design/
-│   ├── block_diagram.png - Asynchronous FIFO architecture diagram
-│   ├── block_diagram.png` - Asynchronous FIFO architecture diagram 
-│   ├── asynchronous.v` - Main asynchronous FIFO module
-│   ├── tb_asynchronous.v` - Testbench with independent clocks
-│   ├── waveform.png` - Simulation waveforms showing cross-domain operation
-│   └── README.md` - Project documentation (this file)
+│   ├── block_diagram.png    # Asynchronous FIFO architecture diagram
+│   ├── block_diagram.png    # Asynchronous FIFO architecture diagram 
+│   ├── asynchronous.v       # Main asynchronous FIFO module
+│   ├── tb_asynchronous.v    # Testbench with independent clocks
+│   ├── waveform.png         # Simulation waveforms showing cross-domain operation
+│   └── README.md            # Project documentation (this file)
 
 ```
 
@@ -114,4 +116,5 @@ assign empty = (w_gray2bin == r_ptr);
   <i>Part of CoachED VLSI Training Projects | Designed by Prajwal</i>
 
 </p>
+
 
