@@ -64,12 +64,12 @@ add x7, x5, x4    # Instruction 2: Uses x5 (data hazard!)
 ### 📋 **Forwarding Conditions**
 ```verilog
 // Forward from EX/MEM stage
-if (EX_MEM_RegWrite && (EX_MEM_rd == ID_EX_rs1) && (EX_MEM_rd ≠ 0))
-    ForwardA = 10;
+ForwardAE = ((RegWriteM == 1) && (RdM != 0) && (RdM == Rs1E)) ? 2'b10 :       
+            ((RegWriteW == 1) && (RdW != 0) && (RdW == Rs1E)) ? 2'b01 : 2'b00;
 
 // Forward from MEM/WB stage  
-if (MEM_WB_RegWrite && (MEM_WB_rd == ID_EX_rs1) && (MEM_WB_rd ≠ 0))
-    ForwardA = 01;
+ForwardBE = ((RegWriteM == 1) && (RdM != 0) && (RdM == Rs2E)) ? 2'b10 : 
+            ((RegWriteW == 1) && (RdW != 0) && (RdW == Rs2E)) ? 2'b01 : 2'b00;
 ```
 
 ---
@@ -79,11 +79,11 @@ if (MEM_WB_RegWrite && (MEM_WB_rd == ID_EX_rs1) && (MEM_WB_rd ≠ 0))
 The processor is tested with data-dependent instructions:
 
 ```assembly
-Instruction1: lw x5, 6(x0)     # Load word into x5
-Instruction2: lw x2, 10(x1)   # Load word into x2
-Instruction3: add x7, x5, x4   # RAW hazard: depends on x5
-Instruction4: sub x9, x10, x2  # RAW hazard: depends on x2  
-Instruction5: add x12, x7, x9  # RAW hazard: depends on x7 and x9
+Instruction1: 00600283 (`lw x5, 6(x0)`)     # Load word into x5
+Instruction2: 00A08103 (`lw x2, 10(x1)`)   # Load word into x2
+Instruction3: 004283B3 (`add x7, x5, x4`)   # RAW hazard: depends on x5
+Instruction4: 402504B3 (`sub x9, x10, x2`)  # RAW hazard: depends on x2  
+Instruction5: 00938633 (`add x12, x7, x9`)  # RAW hazard: depends on x7 and x9
 ```
 
 ---
@@ -119,8 +119,8 @@ Instruction5: add x12, x7, x9  # RAW hazard: depends on x7 and x9
 - **Forwarding Multiplexers**: Added to ALU inputs in execute stage
 - **Hazard Detection Logic**: Compares register addresses across pipeline stages  
 - **Control Signal Generation**: ForwardA and ForwardB signals control data paths
-- **Zero Register Handling**: Special case for x0 register (always zero)
 
 ---
+
 
 ⭐ **This implementation demonstrates advanced pipelining concepts and real-world processor design challenges!**
