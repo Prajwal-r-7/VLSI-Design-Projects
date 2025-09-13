@@ -1,4 +1,4 @@
-# 🛡️ Pipelined RISC Processor with Hazard Unit
+# 🛡️ Pipelined RISC - V Processor with Hazard Unit
 
 An enhanced version of the 32-bit pipelined RISC processor featuring **data hazard detection and resolution** using forwarding/bypassing techniques.
 
@@ -123,5 +123,6 @@ The processor is tested with data-dependent instructions:
 
 
 ⭐ **This implementation demonstrates advanced pipelining concepts and real-world processor design challenges!**
+
 
 
