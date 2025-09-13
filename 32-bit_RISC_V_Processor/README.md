@@ -26,7 +26,7 @@ The processor supports basic RISC instruction set including arithmetic, logical,
 
 ```
 📦 32-bit-RISC-V-Processor/
-├── 📂 Pipelined_RISC_processor/
+├── 📂 Pipelined_RISC_V_processor/
 │   ├── Fetch_cycle.v           # Instruction Fetch stage
 │   ├── Decode_cycle.v          # Instruction Decode stage  
 │   ├── Execute_cycle.v         # Execute stage
@@ -193,6 +193,7 @@ Inst5:                 [IF][ID][EX][MEM][WB]
 
 
 ⭐ **If you find this project helpful, please give it a star!**
+
 
 
 
