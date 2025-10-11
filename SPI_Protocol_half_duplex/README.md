@@ -97,6 +97,7 @@ This mode is useful when:
   <img src="waveform.png" alt="SPI Communication Waveform" width="700">
 </p>
 
+
 The waveform demonstrates:
 - ✅ Proper clock generation
 - ✅ Chip select assertion/deassertion
@@ -106,6 +107,25 @@ The waveform demonstrates:
 
 ---
 
+## 🔄 Data Transfer Implementation
+
+This implementation uses a **bidirectional data line** (`spi_io`) controlled by a direction signal (`spi_io_dir`):
+
+- **Direction Control**: `spi_io_dir` signal determines data flow direction
+  - When Master transmits → Slave receives
+  - When Slave transmits → Master receives
+
+### Test Data Transfer:
+```verilog
+// Phase 1: Master → Slave
+Master transmits: 0xA5A5
+Slave receives: 0xA5A5
+
+// Phase 2: Slave → Master  
+Slave transmits: 0xCC33
+Master receives: 0xCC33
+```
+---
 ## ⚙️ Key Features
 
 - 🔄 **Configurable Data Width**: Easy to modify for 8-bit, 16-bit, or 32-bit transfers
@@ -126,3 +146,4 @@ The waveform demonstrates:
 
 
 ⭐ **If you find this project useful, please give it a star!**
+
