@@ -106,42 +106,6 @@ The waveform demonstrates:
 
 ---
 
-## 🚀 How to Run
-
-### Prerequisites
-- Xilinx Vivado / ModelSim / any Verilog simulator
-- Basic understanding of SPI protocol
-
-### Simulation Steps
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/SPI-Protocol-Half-Duplex.git
-   cd SPI-Protocol-Half-Duplex
-   ```
-
-2. **Open your Verilog simulator**
-
-3. **Add source files**:
-   - Add `spi_master.v`, `spi_slave.v`, `spi_top.v`
-   - Set `spi_top.v` as top module
-   - Add `spi_tb.v` as simulation source
-
-4. **Run simulation**:
-   ```bash
-   # For Vivado
-   Run Behavioral Simulation
-   
-   # For ModelSim
-   vlog spi_master.v spi_slave.v spi_top.v spi_tb.v
-   vsim spi_tb
-   run -all
-   ```
-
-5. **Analyze waveforms** to verify correct operation
-
----
-
 ## ⚙️ Key Features
 
 - 🔄 **Configurable Data Width**: Easy to modify for 8-bit, 16-bit, or 32-bit transfers
@@ -152,37 +116,6 @@ The waveform demonstrates:
 
 ---
 
-## 🎓 Learning Outcomes
-
-Through this project, you'll understand:
-- Serial communication protocols
-- Master-slave synchronous communication
-- Clock-driven data transfer
-- Half-duplex vs full-duplex modes
-- Verilog implementation of communication protocols
-- Timing and synchronization in digital systems
-
----
-
-## 🔮 Future Enhancements
-
-- [ ] Add full-duplex mode support
-- [ ] Implement multiple slave select capability
-- [ ] Add configurable clock polarity (CPOL) and phase (CPHA)
-- [ ] Error detection and handling
-- [ ] FIFO buffers for data management
-- [ ] Different SPI modes (Mode 0, 1, 2, 3)
-
----
-
-## 📚 References
-
-- SPI Protocol Specification
-- Embedded Systems Communication Protocols
-- Verilog HDL Design Guidelines
-
----
-
 ## 📬 Contact
 
 **Prajwal R**  
@@ -190,5 +123,6 @@ Through this project, you'll understand:
 🔗 LinkedIn: [linkedin.com/in/prajwal~r](https://www.linkedin.com/in/prajwal~r)
 
 ---
+
 
 ⭐ **If you find this project useful, please give it a star!**
